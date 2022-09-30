@@ -3,7 +3,7 @@ import { isMobile } from 'react-device-detect'
 import TimeLine from '../../components/timeline'
 import PageTitle from '../../components/pagetitle'
 
-const Bio = React.lazy(() => import('../../components/bio'))
+const Bio = React.lazy(() => import('components/bio'))
 
 const Fallback = () => <div className="text-3xl font-sen">Loading...</div>
 

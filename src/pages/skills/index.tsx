@@ -1,5 +1,5 @@
-import SkillCard from '../../components/skillcard'
-import PageTitle from '../../components/pagetitle'
+import SkillCard from 'components/skillcard'
+import PageTitle from 'components/pagetitle'
 
 const Skills: React.FC = () => {
   const skillTypeList: SkillTypes[] = ['Frontend', 'Backend', 'Others']

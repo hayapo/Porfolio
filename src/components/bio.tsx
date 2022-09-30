@@ -1,11 +1,11 @@
 import { isMobile } from 'react-device-detect'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
-import githubLogo from '@/assets/logos/github.svg'
-import twitterLogo from '@/assets/logos/twitter.svg'
-import linkedinLogo from '@/assets/logos/linkedin.svg'
-import wantedlyLogo from '@/assets/logos/wantedly.svg'
-import bioImgUrl from '@/assets/bio_icon.png?url'
+import githubLogo from 'assets/logos/github.svg'
+import twitterLogo from 'assets/logos/twitter.svg'
+import linkedinLogo from 'assets/logos/linkedin.svg'
+import wantedlyLogo from 'assets/logos/wantedly.svg'
+import bioImgUrl from 'assets/bio_icon.png?url'
 
 type Props = {
   className?: string

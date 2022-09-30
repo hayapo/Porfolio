@@ -1,4 +1,4 @@
-import timelinedata from '../data/timelineData'
+import timelinedata from 'data/timelineData'
 
 type ItemProps = {
   item: TimeLineItemType
