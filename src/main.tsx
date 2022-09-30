@@ -11,7 +11,15 @@ import routes from '~react-pages'
 console.log(routes)
 
 function App() {
-  return <Suspense fallback={<p>Loading...</p>}>{useRoutes(routes)}</Suspense>
+  return (
+    <Suspense
+      fallback={
+        <div className="from-bg-from to-bg-to min-h-screen bg-gradient-to-b"></div>
+      }
+    >
+      {useRoutes(routes)}
+    </Suspense>
+  )
 }
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const app = createRoot(document.getElementById('root')!)
