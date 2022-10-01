@@ -2,16 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { RiExternalLinkLine } from 'react-icons/ri'
 
-/*
-TODO:
-  - Galaxy Fold用のメディアクエリを作る
-  - モバイルはハンバーガーメニューを作るでもいいかも
-*/
+type Props = {
+  className?: string
+}
 
-const SideBarContent: React.FC = () => (
-  <>
-    <div className="flex flex-row w-full justify-center mt-10 xl:mt-[5rem]">
-      <div className="flex flex-row gap-5 lg:gap-14 text-xl xsm:text-3xl xl:text-5xl pointer-events-auto xl:-ml-12">
+const SideBarContent: React.FC<Props> = ({ className }: Props) => (
+  <div className={className}>
+    <div className="flex flex-row w-full items-center justify-center">
+      <div className="fixed flex flex-row gap-5 lg:gap-14 text-xl xsm:text-3xl xl:text-5xl pointer-events-auto top-[25%] xl:top-[17%]">
         <Link
           to="/about"
           className="relative inline-block no-underline after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:w-full after:origin-top-left after:scale-x-[0] after:scale-y-[1] after:bg-white after:duration-[0.5s] hover:after:scale-[1]"
@@ -49,7 +47,7 @@ const SideBarContent: React.FC = () => (
         </a>
       </div>
     </div>
-  </>
+  </div>
 )
 
 export default SideBarContent
