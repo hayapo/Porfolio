@@ -1,6 +1,6 @@
 import React from 'react'
 import Stars from './stars'
-import { skillList } from '/components/skillList'
+import { skillList } from 'components/skillList'
 
 type SkillProps = {
   skill: Skills
