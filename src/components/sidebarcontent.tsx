@@ -10,7 +10,7 @@ TODO:
 
 const SideBarContent: React.FC = () => (
   <>
-    <div className="flex flex-row w-full h-full justify-center mt-10 xl:mt-[5rem]">
+    <div className="flex flex-row w-full justify-center mt-10 xl:mt-[5rem]">
       <div className="flex flex-row gap-5 lg:gap-14 text-xl xsm:text-3xl xl:text-5xl pointer-events-auto xl:-ml-12">
         <Link
           to="/about"
